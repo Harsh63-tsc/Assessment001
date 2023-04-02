@@ -1,4 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/playlist');
+@font-face {
+    font-family: 'harsh';
+    src: url(../Assessment001/assets/font/FontsFree-Net-PlaylistScript.ttf) format('truetype');
+}
 
 * {
     margin: 0;
@@ -34,6 +37,7 @@ li {
     display: flex;
     font-size: 1.05rem;
     margin-right: 253px;
+    color: #000000 !important;
 }
 
 .menu li a:hover {
@@ -42,8 +46,10 @@ li {
 
 
 .menu li {
-    padding: 15px 14px;
+    padding: 22px 24px 20px 20px;
     border-right: 1px solid #cacaca;
+    opacity: 0.9;
+    color: #000000 !important;
 }
 
 .hamburger {
@@ -54,6 +60,10 @@ li {
 
 input[type=checkbox] {
     display: none;
+}
+
+.contact {
+    border-right: none !important;
 }
 
 .header-container {
@@ -92,7 +102,7 @@ input[type=checkbox] {
     font-size: 6.75rem;
     width: 33%;
     color: #464646;
-    font-family: "Trattatello, fantasy";
+    font-family: 'Birthstone Bounce', cursive;
 }
 
 .bellaLogo p {
@@ -101,6 +111,7 @@ input[type=checkbox] {
     color: #000000;
     font-weight: 275;
     font-family: "Montserrat";
+
 }
 
 .bellaSearchBar {
@@ -612,11 +623,30 @@ input[type=checkbox] {
 
 }
 
+.logo h3 {
+    display: none;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width:550px) and (min-width:350px) {
     .navbar {
         height: 8vh;
+    }
+
+    .logo {
+        font-size: 3.0rem;
+        color: #464646;
+        font-weight: 400;
+        margin-left: 1vh;
+        width: 50%;
+
+    }
+
+    .logo h3 {
+        display: block;
+        font-family: 'Kristi', cursive;
+
     }
 
     .menu {
@@ -625,12 +655,14 @@ input[type=checkbox] {
         right: 0;
         left: 0;
         text-align: center;
-        padding: 16px 0;
+        width: 100%;
+        background-color: #aad9eb;
+        z-index: 1;
     }
 
     .menu li:hover {
         display: inline-block;
-        background-color: #fc4733;
+        color: #fc4733;
         transition: 0.3s ease;
     }
 
@@ -691,6 +723,7 @@ input[type=checkbox] {
         background-size: 150vh;
         line-height: 250%;
         height: 70vh;
+
     }
 
     .welcome-container h4 {
@@ -701,8 +734,7 @@ input[type=checkbox] {
         width: 100%;
     }
 
-    .modelImage-container {
-    }
+    .modelImage-container {}
 
     .main-cardcontainer {
         width: 100%;
@@ -744,7 +776,8 @@ input[type=checkbox] {
     .readers-corner {
         flex-direction: column;
     }
-    .readers-corner img{
+
+    .readers-corner img {
         height: 30vh;
     }
 
@@ -755,29 +788,35 @@ input[type=checkbox] {
         align-items: center;
         justify-content: center;
     }
-    .twitterfeeds{
+
+    .twitterfeeds {
         width: 100%;
         margin-bottom: 5vh;
     }
-    .newsletter{
+
+    .newsletter {
         height: 30vh;
         margin-bottom: 10vh;
         background-size: 200vh;
         height: 60vh;
         text-align: center;
     }
-    .newsletter-inputs{
+
+    .newsletter-inputs {
         width: 100%;
         flex-direction: column;
         display: flex;
         align-items: center;
         gap: 1.5em;
     }
-    .newsletter-inputs input, .newsletter-inputs button{
+
+    .newsletter-inputs input,
+    .newsletter-inputs button {
         width: 89%;
         text-align: center;
     }
-    .copyright{
+
+    .copyright {
         height: 15vh;
         line-height: 22px;
         padding-top: 3.5vh;

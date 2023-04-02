@@ -79,6 +79,7 @@ input[type=checkbox] {
     transform: scale(1.3, 1.3);
     transition: 0.5s ease;
 }
+
 .bellaLogo {
     width: 50%;
     display: flex;
@@ -91,7 +92,7 @@ input[type=checkbox] {
     font-size: 6.75rem;
     width: 33%;
     color: #464646;
-    font-family: 'Playlist';
+    font-family: "Trattatello, fantasy";
 }
 
 .bellaLogo p {
@@ -240,10 +241,10 @@ input[type=checkbox] {
     width: 100%;
     align-items: center;
     height: 120%;
+    text-align: center;
 }
 
 .cardlinks {
-    background-color: #ecf8f8;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -251,8 +252,6 @@ input[type=checkbox] {
     height: 12.1vh;
     border-top: 1px solid #e2e2e2;
     margin-top: 20px;
-
-
 }
 
 .main-cardcontainer {
@@ -272,9 +271,7 @@ input[type=checkbox] {
 .cards {
     width: 100%;
     border: 1px solid #e2e2e2;
-    align-items: center;
     text-align: center;
-    height: 90vh;
     line-height: 180%;
 }
 
@@ -445,7 +442,7 @@ input[type=checkbox] {
 }
 
 .facebook-ad {
-    height: 300px;
+    height: 29vh;
 }
 
 .tags-container {
@@ -545,6 +542,18 @@ input[type=checkbox] {
     align-self: center;
 }
 
+.followus {
+    height: 11vh;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    background-color: #00b9ff;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    margin-top: 20px;
+    padding-top: 22px;
+}
+
 .newsletter {
     background-image: url(.//assets/Layer\ 25\ copy.png), url(.//assets/Layer\ 25.png);
     background-repeat: no-repeat, no-repeat;
@@ -568,6 +577,7 @@ input[type=checkbox] {
     width: 18vw;
     padding-left: 10px;
     color: #cacaca;
+    border: none;
 
 }
 
@@ -592,13 +602,14 @@ input[type=checkbox] {
 .copyright {
 
     background-color: rgb(192, 220, 236);
-    height: 100px;
+    height: 20vh;
     letter-spacing: -1px;
     line-height: 85px;
     color: #000000;
     font-weight: 400;
     font-family: "Old Standard TT";
     text-align: center;
+
 }
 
 /* MEDIA QUERIES */
@@ -668,57 +679,109 @@ input[type=checkbox] {
         align-items: center;
         height: 10vh;
     }
+
     .header-container {
         flex-direction: column;
-        height: 37vh ;
-        border: 1px solid;
+        height: 37vh;
     }
-    .welcome-container{
+
+    .welcome-container {
         font-size: 1rem;
         background-position: center;
         background-size: 150vh;
         line-height: 250%;
-        height: 70vh; 
-        border: 1px solid red;
+        height: 70vh;
     }
-    .welcome-container h4{
+
+    .welcome-container h4 {
         font-size: 1.4rem;
     }
-    .left-container{
+
+    .left-container {
         width: 100%;
     }
-    .modelImage-container{
-        border: 1px solid ;
+
+    .modelImage-container {
     }
-    .main-cardcontainer{
+
+    .main-cardcontainer {
         width: 100%;
-        
+
     }
-    .card-container{
+
+    .card-container {
         width: 100%;
         gap: 0.5em;
     }
-    .cards{
+
+    .cards {
         width: 60%;
     }
-    .cards img{
+
+    .cards img {
         height: 19vh;
     }
-    .share-aboutsection{
+
+    .share-aboutsection {
         width: 100%;
         font-size: 1.1rem;
-       line-height: 200%;
-       border: 1px solid black;
+        line-height: 200%;
     }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
     .right-container {
-        display: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .aboutAuthor-section {
+        width: 100%;
+    }
+
+    .readers-corner {
+        flex-direction: column;
+    }
+    .readers-corner img{
+        height: 30vh;
+    }
+
+    .flex-boxread {
+        flex-direction: column;
+        text-align: center;
+        width: 99%;
+        align-items: center;
+        justify-content: center;
+    }
+    .twitterfeeds{
+        width: 100%;
+        margin-bottom: 5vh;
     }
     .newsletter{
-        background-image: none;
-        display: none;
+        height: 30vh;
+        margin-bottom: 10vh;
+        background-size: 200vh;
+        height: 60vh;
+        text-align: center;
     }
-    .footer{
-        display: none;
+    .newsletter-inputs{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+    }
+    .newsletter-inputs input, .newsletter-inputs button{
+        width: 89%;
+        text-align: center;
+    }
+    .copyright{
+        height: 15vh;
+        line-height: 22px;
+        padding-top: 3.5vh;
+
     }
 }
 

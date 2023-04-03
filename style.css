@@ -13,7 +13,7 @@
 body {
     padding: 0;
     margin: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 a {
@@ -171,9 +171,11 @@ input[type=checkbox] {
     border: #fc4733;
     margin-top: 15px;
     border-radius: 3px;
+    transition: 3s ease-in-out;
 }
 .read-more:hover{
     background-color: black;
+    transform: rotate(360deg);
 }
 .main-container {
     width: 100%;
@@ -206,6 +208,7 @@ input[type=checkbox] {
     width: 100%;
     align-items: center;
 }
+
 
 .modelImage-container span {
     margin-top: 20px;
@@ -345,8 +348,13 @@ input[type=checkbox] {
     font-weight: 500;
     font-family: "Montserrat";
     text-align: center;
+    transition: transform 3s ease;
 }
-
+.loadmore button:hover{
+    transform: rotate(360deg);
+    background-color: #000000;
+    color: white;
+}
 .right-container {
     width: 32%;
     display: flex;
@@ -603,8 +611,12 @@ input[type=checkbox] {
     font-family: "Old Standard TT";
     margin-top: 20px;
     padding-top: 22px;
+    transition: transform 3s ease;
 }
-
+.followus:hover{
+    transform: rotate(45deg,45deg);
+    color: black;
+}
 .newsletter {
     background-image: url(.//assets/Layer\ 25\ copy.png), url(.//assets/Layer\ 25.png);
     background-repeat: no-repeat, no-repeat;
@@ -648,6 +660,9 @@ input[type=checkbox] {
 
 .footer-images img {
     width: 16.665%;
+}
+.footer-images img:hover{
+    background-color: black;
 }
 
 .copyright {
@@ -775,7 +790,7 @@ input[type=checkbox] {
         width: 100%;
     }
 
-    .modelImage-container {}
+    
 
     .main-cardcontainer {
         width: 100%;
@@ -794,7 +809,7 @@ input[type=checkbox] {
     .cards img {
         height: 19vh;
     }
-
+    
     .share-aboutsection {
         width: 100%;
         font-size: 1.1rem;
